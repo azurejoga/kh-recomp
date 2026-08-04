@@ -1,0 +1,9843 @@
+# game_static.toml v2 — KH CoM EU corpus ROM estatico (SEM static_resume_all)
+# v1 com static_resume_all=true engoliu entradas de funcoes vizinhas como interiores
+# (ex: 0x0811E2CC virou alias de 0x0811E2C4 -> loop infinito no dispatch).
+# Interiores IRQ/SWI voltam ao self-heal pontual (estado validado).
+
+[program]
+name = "Kingdom Hearts: Chain of Memories (Europe)"
+id = "khcom_eur"
+load_address = 0x08000000
+size = 0x2000000
+entry_pc = 0x08000000
+speculative_literal_harvest = false
+aot_scan_start = 0x080000C0
+aot_scan_end = 0x08A00000
+
+[identity]
+sha1 = "8db73586cdb11b3795907edebf43228dbcd3e6b2"
+
+[[extra_func]]
+addr = 0x08000000
+mode = "arm"
+[[extra_func]]
+addr = 0x0800095C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000964
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000A18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000A20
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000B68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000B7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000B86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000BB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000BC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000BCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000BDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000BE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C46
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C56
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000C98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CCA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CEE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000CF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D32
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000D5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E46
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E82
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000E92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000ECA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000ED8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000EF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F42
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F60
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000F9A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000FA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08000FD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800113C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08001414
+mode = "thumb"
+[[extra_func]]
+addr = 0x080015AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08001670
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800168A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080020D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080021DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080021E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002212
+mode = "thumb"
+[[extra_func]]
+addr = 0x080022B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080022C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080022E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080022F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002458
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080024F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002500
+mode = "thumb"
+[[extra_func]]
+addr = 0x080025D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800271C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002732
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002738
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002746
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800274C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800275C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002764
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800277A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002782
+mode = "thumb"
+[[extra_func]]
+addr = 0x080027A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080027C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080027D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080027E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800282C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002836
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002846
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800285A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002868
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800286E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002880
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800288E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080028AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080028C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080028D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080028EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080028F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800290E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002938
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002954
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800295A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800295C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002962
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800296A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002970
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800298E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080029B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080029D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080029E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A36
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A48
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A56
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A76
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002A8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002ACE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002AEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002B96
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002BEE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C78
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002C9A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002D2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002D68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002D74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002DAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002DB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002DC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002DD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08002DF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080039E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080039F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08003AE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08003B08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08003D32
+mode = "thumb"
+[[extra_func]]
+addr = 0x080044C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080044E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800453C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004594
+mode = "thumb"
+[[extra_func]]
+addr = 0x080045EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080045FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004692
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004D50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004D6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004D7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004D98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004DF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004DFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E12
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E42
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E82
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004E98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004EBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004EC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004EDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004F9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004FA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004FB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004FBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004FC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08004FF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005026
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005032
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800503E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005048
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005052
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005066
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800506E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005164
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005176
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005184
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005194
+mode = "thumb"
+[[extra_func]]
+addr = 0x080051A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080051AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005210
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005254
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005262
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005268
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005272
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005278
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005286
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800529C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080052E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005308
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005328
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800532E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005364
+mode = "thumb"
+[[extra_func]]
+addr = 0x080053BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080053CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080053E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005416
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005442
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005456
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800545A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800546C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005472
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800547E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080054A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080054B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080054DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080054E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080054FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005520
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005528
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800553E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800556C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800557C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080055A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080055A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080055B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080055E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800569C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080056BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080056CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080056DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080056EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080056F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005700
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005714
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800571C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005724
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800572C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800572E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800573C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005750
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005758
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005760
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005768
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800576A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005778
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800579C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005840
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005870
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800587C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005890
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800589A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080058FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005928
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005950
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005974
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005998
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080059FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005A04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005A0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005ADC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005AFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005C68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005C74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005C94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005C9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005CA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005CC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005CF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005D64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005D6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005D78
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005DAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005DB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005DBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005DFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005E18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005EE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005F0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005F18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005F38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08005F60
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006420
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006442
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006484
+mode = "thumb"
+[[extra_func]]
+addr = 0x080064A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080065F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800660E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006614
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006634
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006636
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006690
+mode = "thumb"
+[[extra_func]]
+addr = 0x080066A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006C54
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006E06
+mode = "thumb"
+[[extra_func]]
+addr = 0x08006E74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008074
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008098
+mode = "thumb"
+[[extra_func]]
+addr = 0x080080AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080080B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080080C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008100
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008120
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008148
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008150
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008CE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008CFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008D64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008D86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008DD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008DEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008DFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008E06
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008E28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008E84
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008E92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008ED2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008EE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F48
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F62
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F6E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08008F9A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009118
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009128
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009140
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009148
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009158
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009164
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800916E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009182
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009184
+mode = "thumb"
+[[extra_func]]
+addr = 0x080091EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080093F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800940E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009430
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009438
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009450
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009468
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009476
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800948A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800948C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009502
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009788
+mode = "thumb"
+[[extra_func]]
+addr = 0x080097A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080097D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080097DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080097EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009804
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009812
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009826
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009828
+mode = "thumb"
+[[extra_func]]
+addr = 0x080098B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009CD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009CDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009CE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009CEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009CF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D12
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009D9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009DF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E48
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E96
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009E9A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009EB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009EB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009EB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009EC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009ECC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009ECE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F46
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009F92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FC2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08009FF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A034
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A04E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A0CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A0DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A0E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A0F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A0F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800A100
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800ABEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800ABF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC30
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC56
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC58
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC76
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800AC82
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800ACA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800ACA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800ACC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800B308
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D094
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D0A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D0CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D0E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D0EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D0FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D100
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D108
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D190
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D1BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D1CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D224
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D22C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D250
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D280
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D286
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D288
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D294
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D29C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D2AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D2BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D2BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D2E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D2FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D30C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D316
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D33C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D364
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D38C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D3F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D414
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D418
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D434
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D458
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D45C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D47A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D486
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D49C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D4E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D4F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D51C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D578
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D5C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D5D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D600
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D624
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D62C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D650
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D66C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D678
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D67C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D694
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D6F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D704
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D710
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D764
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D798
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D976
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D97E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D994
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800D9FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA02
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA30
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA68
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA98
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DA9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DAC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DAD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0800DAE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08012E10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08012E36
+mode = "thumb"
+[[extra_func]]
+addr = 0x08012E3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013048
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013190
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013204
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801384C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080138B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080138BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080138C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080139A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080139BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080139D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A60
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A6E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A78
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013A9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013AB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013ABA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013AC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013AE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013AF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013C7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013CD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013CDE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013CFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D84
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013D94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013DFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013E14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08013E16
+mode = "thumb"
+[[extra_func]]
+addr = 0x080161E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080161EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080161F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080161FA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801620A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016210
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016460
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801646E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016476
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801647E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016486
+mode = "thumb"
+[[extra_func]]
+addr = 0x080166E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016728
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016736
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801679C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080167A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08016AC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801CF54
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801CFBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D038
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D664
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D6A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D6C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D6D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D6E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801D6F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DB6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DB98
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DC3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DC92
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DC96
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DCC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DCD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801DDC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801EDEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0801EE10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020958
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802096C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020986
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020992
+mode = "thumb"
+[[extra_func]]
+addr = 0x080209A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080209D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020A14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020A1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020A22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020A26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020A2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020B64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020B70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020B88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C16
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C32
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020C7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020CA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020CAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020CD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020CE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020D72
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020D7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020D90
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020DF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E06
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E16
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E20
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020E76
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020ECE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020ED4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020EF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F80
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020F96
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020FA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020FE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020FF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08020FFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08021000
+mode = "thumb"
+[[extra_func]]
+addr = 0x08021006
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802100C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08021478
+mode = "thumb"
+[[extra_func]]
+addr = 0x080214B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080214D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08022738
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802282E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08022832
+mode = "thumb"
+[[extra_func]]
+addr = 0x08022850
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802287C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B06A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B0AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B0BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B0CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B0F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B118
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B11E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B15C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0802B342
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033144
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033224
+mode = "thumb"
+[[extra_func]]
+addr = 0x0803322E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080334B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080338A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080338D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033B60
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033B84
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033B94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033BCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08033BD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08044EF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08044FC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08044FD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0804506A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805E250
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805E256
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805E924
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805E964
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805F22C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805F250
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805F4D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0805F560
+mode = "thumb"
+[[extra_func]]
+addr = 0x08060048
+mode = "thumb"
+[[extra_func]]
+addr = 0x08060058
+mode = "thumb"
+[[extra_func]]
+addr = 0x08060B78
+mode = "thumb"
+[[extra_func]]
+addr = 0x08060C02
+mode = "thumb"
+[[extra_func]]
+addr = 0x08060C38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08062EC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08062EE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08062F04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08062F10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08062F36
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063484
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063492
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063534
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063538
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063544
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063550
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806355C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063568
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063570
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063578
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063580
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063588
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806358E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063594
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063758
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806376A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063772
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063778
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063786
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063792
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806379E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080637A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080637AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063CE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063CF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063CF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063D00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063D14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063D22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063D2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08063D38
+mode = "thumb"
+[[extra_func]]
+addr = 0x080644BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065A44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065A56
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065A62
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065A92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065AA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065AAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065AB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065AC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065DB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065DE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065DE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065DF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065DF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065E34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065E40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065E68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065E82
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065E94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065EA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065EBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065ECC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065EE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065EF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065EFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08065F00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066074
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066082
+mode = "thumb"
+[[extra_func]]
+addr = 0x080660C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080660E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080660F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080660FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066150
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066158
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066214
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806621A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066228
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066234
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806623E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066240
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066250
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066264
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806627C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066286
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066290
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806631C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066322
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806632C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066344
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066360
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066370
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066384
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066386
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806639E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080663A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066440
+mode = "thumb"
+[[extra_func]]
+addr = 0x08066474
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806648C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080664B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080664C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080664D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080664DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BC20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BC2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BC78
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BC96
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BCF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BDF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE10
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE42
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE64
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE70
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806BE72
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806C504
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CA20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CA42
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CA4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CA5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CA68
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CAA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CAB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CAB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CACA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CAD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CADE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CAF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB06
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB22
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB68
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB6E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB86
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB88
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CB90
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBCC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CBFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CC18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CC3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CC7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CC80
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CC88
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CCA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CCBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CCDE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CCF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD08
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD10
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD40
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD48
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD52
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD66
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD78
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD80
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CD9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CDAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CDC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806CDD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D4B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D4DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D4E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D4F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D4F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D50A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D514
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D51E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D534
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D53A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D55C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D572
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D58A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D596
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D59E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D5C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D5CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D60A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D612
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D6F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D712
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D734
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D780
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D782
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D790
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D7D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D7FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D810
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D826
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D8AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D8C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D8CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D8F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D900
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D92A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D938
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D99E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D9AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806D9CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DA0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DA3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DA7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DA88
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DAC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DAD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DAD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB22
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB24
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB38
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB74
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB90
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DB96
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DBB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DBB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DBDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DBF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC34
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC36
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC60
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DC98
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DCAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DCEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD46
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD68
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DD6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DDA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DDAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DDB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DDF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DDFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DE02
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DE1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DE32
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DE48
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DE74
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DEA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DECE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DED6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DF04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DF0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806DF14
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E070
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E0D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E106
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E10A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E13A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E162
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E16A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E198
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E1A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E1A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E2D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E2DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E2E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E2E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E336
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E344
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E3BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E3C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E3CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E3F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E408
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E440
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E448
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E478
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E48E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E496
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E4A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E4AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E4B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E4BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E50A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E594
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E59E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E5A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E5C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E5E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E618
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E666
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806E66E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ECDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED38
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED70
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED90
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806ED96
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806EDA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806EDC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806EDEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806EE04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806FE64
+mode = "thumb"
+[[extra_func]]
+addr = 0x0806FEB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080716DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080716E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080716EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080716F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071704
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807170E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071722
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807172C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071734
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071744
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807174E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071762
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807176C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071774
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071784
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807178E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080717F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071800
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071814
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807181C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807182C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071836
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807184A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071854
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071868
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071870
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807187A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807188A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071898
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080718EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071C22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071C28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071C36
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071C9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071CA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071D10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DC2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071DF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071E5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071EA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071EA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071EAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071EB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071ED0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071EDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071F44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071F88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071F8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071F90
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071F9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071FBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071FC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08071FD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072118
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072120
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072128
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807215E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072164
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807218A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807219A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080721A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080721B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080721B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807220C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072220
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807223C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072262
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072268
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807226E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807227A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072340
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072434
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072444
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807244E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072462
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807246C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072474
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807247C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072492
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807249A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080724D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080724E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080724EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080724F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072500
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072520
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807252E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072560
+mode = "thumb"
+[[extra_func]]
+addr = 0x080725C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080725C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080725EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080725F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080725FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072604
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072612
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072616
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807261C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072624
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807264C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072660
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072674
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807268A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072692
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072698
+mode = "thumb"
+[[extra_func]]
+addr = 0x080726A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080726CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080726E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080726E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080726FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807273C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072740
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807278C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072792
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072798
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080727DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072804
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072818
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807282A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072838
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072850
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072880
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072886
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072898
+mode = "thumb"
+[[extra_func]]
+addr = 0x080728BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080728D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080728F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072930
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072960
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072984
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072988
+mode = "thumb"
+[[extra_func]]
+addr = 0x080729B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080729F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080729F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A76
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072A94
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072AF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072AFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072B04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072B14
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072B1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072B76
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072C28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072C56
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072C68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072C72
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072C8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072CB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072CCA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072CD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072CEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D20
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D72
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072D84
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072DF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E52
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E5E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072E7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072EA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072EBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072EE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072EF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F84
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072F86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08072FFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073026
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073040
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073062
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073064
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073074
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073096
+mode = "thumb"
+[[extra_func]]
+addr = 0x080730AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080730B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080730CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080730E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080730FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073112
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073118
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073126
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807312E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073140
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807315E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073160
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073172
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807319A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080731F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073200
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073208
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073210
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073218
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807322E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807323A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073244
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073254
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807325C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807326A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073274
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080732F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073300
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073306
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073308
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073314
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807331E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807333C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073348
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073354
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080733FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073920
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807396E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080739E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A06
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A80
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073A9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073ABE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073AC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073AD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B62
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B78
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B80
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073B9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073BB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073BBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073BD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C24
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073C9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073CB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073CD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073D00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073D20
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073D90
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073DAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073DB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073DB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073DD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073DE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073FAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073FC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073FE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08073FFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074040
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074056
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807407C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074082
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807409C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080740A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080740A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080740B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080740C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080740F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074168
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074170
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074190
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807419C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080741B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080741B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080743B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080743FA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080749E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080749FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A06
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A42
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A48
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A70
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074A9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074AAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074AE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074AEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074AFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074B56
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BCC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074BE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074C40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074C4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074C6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074C86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08074C88
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807525C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075268
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075270
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807527C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075284
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075290
+mode = "thumb"
+[[extra_func]]
+addr = 0x080752D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080752FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075304
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075328
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807533A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807536A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075384
+mode = "thumb"
+[[extra_func]]
+addr = 0x080753B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080753B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080753DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080753E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807540E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075412
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075424
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807542A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075432
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807544E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807545C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075480
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075484
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807548E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075498
+mode = "thumb"
+[[extra_func]]
+addr = 0x080754B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080754BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080754C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080754D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075506
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075518
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807552E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075542
+mode = "thumb"
+[[extra_func]]
+addr = 0x08075550
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807557C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807557E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807558E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080755AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080755C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08076340
+mode = "thumb"
+[[extra_func]]
+addr = 0x08076390
+mode = "thumb"
+[[extra_func]]
+addr = 0x080771F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08077202
+mode = "thumb"
+[[extra_func]]
+addr = 0x08077240
+mode = "thumb"
+[[extra_func]]
+addr = 0x08077264
+mode = "thumb"
+[[extra_func]]
+addr = 0x08077274
+mode = "thumb"
+[[extra_func]]
+addr = 0x08077284
+mode = "thumb"
+[[extra_func]]
+addr = 0x080772CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080772D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080772DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B318
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B322
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B384
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B396
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B3A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B3C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B3D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807B3E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807C32C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807CE64
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807CE8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807D080
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807D09A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807D0A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807D0CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0807D100
+mode = "thumb"
+[[extra_func]]
+addr = 0x080834B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080834BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080834EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083504
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808350A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083518
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808351E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080835F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808360A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080837A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080837EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080837F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083820
+mode = "thumb"
+[[extra_func]]
+addr = 0x080838FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083902
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083910
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808391C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083928
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083936
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083940
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083946
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083954
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083960
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808396A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083982
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083992
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083B38
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083B3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083B44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C40
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C46
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C52
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C80
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C86
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083C8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083D8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083D92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083D98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083F7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083F88
+mode = "thumb"
+[[extra_func]]
+addr = 0x08083F98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084076
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084630
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084644
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084650
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084670
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084760
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808476C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084776
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808478A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080847BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080847F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084802
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084C10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084C58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08084C72
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808501C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085108
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085114
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085118
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085144
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085148
+mode = "thumb"
+[[extra_func]]
+addr = 0x0808514C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085150
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085154
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085166
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085176
+mode = "thumb"
+[[extra_func]]
+addr = 0x08085186
+mode = "thumb"
+[[extra_func]]
+addr = 0x080854B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093BB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093BBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093BC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093BD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093BE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093C90
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093C96
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093D74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093D7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093DF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093DF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093E44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093E4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093E6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093E72
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093EC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093ECA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08093F00
+mode = "thumb"
+[[extra_func]]
+addr = 0x08099478
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A23C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A23DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A23F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A243E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2450
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2456
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2466
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2484
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A24F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2516
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2580
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A25A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A25AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2720
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2740
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2814
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2924
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A2928
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A3F68
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A3F98
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A40C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4100
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4170
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A41A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4264
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4282
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A42C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4304
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4350
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A438C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4420
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4428
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4432
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A443C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4446
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4450
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A445A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A44B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A44C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A45CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A45E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A45F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4600
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A460C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4612
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A47BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A47F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4806
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4816
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4864
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A487C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4B4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4B94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4CF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4FD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A4FE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A50CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5164
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A517C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5188
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5198
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A532A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A536C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A537E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A539E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A53A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A54AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A54C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5520
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5590
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5678
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5690
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A5694
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8270
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8282
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A828E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8294
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A829A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8BF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C00
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C06
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C12
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C18
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C24
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C30
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C36
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C42
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C50
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C56
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C66
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C6E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C76
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C86
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C96
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8C9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CA6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080A8CE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3484
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3B5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3B94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3BB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3BC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3BD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3C30
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3C48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3C52
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3C5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3C66
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3CB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D14
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080C3D94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF3EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF3F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF454
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF45A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF484
+mode = "thumb"
+[[extra_func]]
+addr = 0x080CF490
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D21BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D21D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D21F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2210
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2274
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D227A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2280
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2288
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2290
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D22F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2304
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D230E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D231E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2328
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2348
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2380
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D238C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D23E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2400
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D240E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2412
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2416
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D241A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D242A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2430
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D243C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2444
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2470
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2478
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D247E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D248A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2492
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D24FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2506
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2512
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D251C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2528
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2550
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2558
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D256A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2574
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D25B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D25C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2604
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2608
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2610
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2624
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2638
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2664
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2670
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D267E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D268C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2696
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D26AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D26C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D26D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D26DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2700
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2704
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D270C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D271C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2722
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2738
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D273C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2744
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2758
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2778
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2790
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D279C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D27FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2804
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2808
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2818
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D281E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2828
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2838
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2868
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D287A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2884
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D288E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2898
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D28EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2918
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D293E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D299A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D29CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D29D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D29DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D29E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D29FA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A00
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A10
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A14
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A22
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A28
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A34
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A38
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A42
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A46
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A60
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2A92
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2AA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2AAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2ACE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2AD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2AF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B08
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B20
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B74
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B7C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2B98
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BCC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2BFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2C06
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2C64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2C6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2C70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2C78
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CEE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2CFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2D3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2D3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2D72
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2D94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2D9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2DA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2DAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2DF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2E16
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2E58
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2E62
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2EC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2F08
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2F48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2F72
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2F7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2F86
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D2FDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3020
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3026
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D303E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3048
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D304E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D305A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3066
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D30B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D30BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D30D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D30E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D30F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3106
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3114
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3124
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D312E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3162
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D317C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3186
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D318C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3196
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D31A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D31B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D31E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D31FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3238
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D326E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3272
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D327E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3290
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D329A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D32E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3312
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3316
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3322
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3330
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D333A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3348
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D335C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D336E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D337C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3386
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D338C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D33DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D340E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3438
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3442
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3574
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3586
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3594
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D35A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D35A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D38A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D38E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D38E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D391C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3934
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D393E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3978
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D399A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D39DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D39F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D39FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A08
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A16
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A26
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A56
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3A5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3AE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B46
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B4A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B54
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3B7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3BE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3BE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3BFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C08
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C12
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C38
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C54
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C62
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C76
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3C94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CCC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3CFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D04
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D10
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D16
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D22
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D28
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D34
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D46
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D4A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D5E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D72
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D86
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D90
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3D9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3DB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3DBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3DCA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3DD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3DDE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E00
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E20
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E40
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E48
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E58
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E74
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E78
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E80
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E8C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3E9E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3EAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3EB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3ED4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3EDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3EEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3EF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3F12
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3F18
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3F20
+mode = "thumb"
+[[extra_func]]
+addr = 0x080D3F28
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DACF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DACF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC714
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC766
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC780
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC7E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC7F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC86C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC948
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC95A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC960
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC970
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC980
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC998
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC9BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080DC9C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7974
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7990
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E79B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E79DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E79EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7A0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7BA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7BAC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7BC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7D70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7D94
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7D9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7DB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E26
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7E84
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7EA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7EB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7EBA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7EC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7EE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7F08
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7F12
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7F28
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7F5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7F78
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7FB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E7FDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8002
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E804A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E806E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8090
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8098
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E80B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E80E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E80F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8128
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8144
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8152
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8168
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E816A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8176
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E817A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8194
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8196
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E81F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8200
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E820C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8214
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8218
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8226
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8228
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E822C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8248
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8258
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8260
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8268
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8272
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8286
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8294
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E82F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8318
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E831C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8324
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E832C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8334
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8340
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E834C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E838E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E839A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E83D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E844E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E845E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E846C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8476
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8480
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E848A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8494
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E849C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E84AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E84C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E84D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E84EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E84FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8512
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8524
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8536
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8548
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E855A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8568
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8576
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8584
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8594
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E85EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E867C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8682
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E868C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E86B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E86CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E86F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8700
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8718
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E871C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8724
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8730
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8738
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8740
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8748
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8750
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8758
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8766
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8774
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8782
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E8790
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E879E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080E87FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FB804
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FB818
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC07C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC0CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC0EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC110
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC11E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC13E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC176
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC1A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC2FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC44A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC4AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC510
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC538
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC54C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC560
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC56C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC592
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC8C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC8D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC8E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC924
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC932
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC968
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC974
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC9F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FC9F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA00
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA14
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA24
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA38
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA74
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA76
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCA82
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCAB8
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCAC4
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCAD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCAF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCAFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB34
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB38
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB50
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB64
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB68
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB80
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCB98
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCBFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC36
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC5E
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC62
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC66
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC70
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC76
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC7A
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC88
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCC92
+mode = "thumb"
+[[extra_func]]
+addr = 0x080FCCA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08100A10
+mode = "thumb"
+[[extra_func]]
+addr = 0x08100A18
+mode = "thumb"
+[[extra_func]]
+addr = 0x08100A26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08107CD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08107CDA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116AF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116AFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116AFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116AFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116CDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116CF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D02
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D30
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D54
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116D8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116DB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116DB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116DC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116E4A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116E58
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116E5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116E64
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116E7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EB4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EBE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EC2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116ECC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EEE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116EFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F20
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F22
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F62
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F68
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F90
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116F9A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08116FA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117034
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117042
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811704C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811704E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117058
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117066
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811706E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117078
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117084
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811708C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117090
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117098
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170FA
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081170FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117100
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117102
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117104
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117106
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117128
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811712A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811712C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811712E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117130
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117132
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117134
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117136
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117138
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811713A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811713C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117148
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811714A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811714C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811714E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117150
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117152
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117154
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117158
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811715A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811715C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811715E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117160
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117162
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117164
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117166
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117168
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811716A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811716C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117174
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117176
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117178
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811717A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811717C
+mode = "thumb"
+[[extra_func]]
+addr = 0x081171A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081171B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081171EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x081171F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117206
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811722A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117268
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811726C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117280
+mode = "thumb"
+[[extra_func]]
+addr = 0x081172AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081172D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081172E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x081172EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117348
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811735C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811736A
+mode = "thumb"
+[[extra_func]]
+addr = 0x081173B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081173C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117428
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117430
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811744E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811747A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117488
+mode = "thumb"
+[[extra_func]]
+addr = 0x081174F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081174F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117502
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811750A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117578
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117598
+mode = "thumb"
+[[extra_func]]
+addr = 0x081175A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081175AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x081175B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081175FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811761C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811762C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117648
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117684
+mode = "thumb"
+[[extra_func]]
+addr = 0x081176A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081176BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081176CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081176DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811770A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117738
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117740
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117748
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811774A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117754
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117766
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117816
+mode = "thumb"
+[[extra_func]]
+addr = 0x081178C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081178E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081178FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117918
+mode = "thumb"
+[[extra_func]]
+addr = 0x081179A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081179B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081179DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x081179E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A04
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A26
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A34
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A42
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A50
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A5E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A74
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A82
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117A9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117AC2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117AC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117AE8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117AEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B46
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B48
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117B8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117BAE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117BB6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117BD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117BDC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117BE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117D44
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117D76
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117D92
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117DA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117DA8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117DC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117DD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117DFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E08
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E28
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E7E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117E98
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117EB2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117EBC
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117F96
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117FA0
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117FD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117FF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08117FFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811801E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118022
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811802C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811802E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118030
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118032
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118034
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118036
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118038
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811803A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811803C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811803E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118040
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118042
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081180F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118114
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118116
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118118
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811811A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811811C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811811E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118120
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118122
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118124
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118134
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811813C
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118150
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118156
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118158
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811815A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811815C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811815E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118160
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118162
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118166
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118168
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811816A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811816C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811816E
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118170
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118174
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118188
+mode = "thumb"
+[[extra_func]]
+addr = 0x08118190
+mode = "thumb"
+[[extra_func]]
+addr = 0x081181A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x081181AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BCD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BCEE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD06
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD14
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD48
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD52
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD58
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD82
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BD94
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BDA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BE42
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BE68
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BE84
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BEF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BF04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BF28
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BF80
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BFA2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BFC6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BFD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BFEC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811BFF2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C000
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C008
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C01C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C038
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C066
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C070
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C09C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C0E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C1F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C20A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C21C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C22A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C240
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C24E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C25C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C264
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C274
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C286
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C294
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C296
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C2FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C30C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C30E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C31C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C324
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C336
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C348
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C35A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C368
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C374
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C382
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C390
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C39E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3AE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3B4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C3F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C404
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C406
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C40E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C410
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C412
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C414
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C416
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C418
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C426
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C428
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C42A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C430
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C432
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C434
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C436
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C438
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C43A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C43C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C43E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C440
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C442
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C444
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C446
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C448
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C44A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C44C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C44E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C450
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C452
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C464
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C466
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C468
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C46A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C46C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C46E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C470
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C472
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C474
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C476
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C478
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C4FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C508
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C514
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C534
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C53C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C548
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C56E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C578
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C580
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C590
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C5A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C5E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C630
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C652
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C65C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C66C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C676
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C680
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C684
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C6FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C704
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C706
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C708
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C70C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C70E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C71E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C720
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C722
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C726
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C728
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C740
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C742
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C744
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C748
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C74A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C75E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C760
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C762
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C766
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C768
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C77C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C77E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C780
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C782
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C784
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C786
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C788
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C78A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C78C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C78E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C790
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C792
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C794
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C796
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C798
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C79A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C79C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C79E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7A2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7A6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7D2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7F0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7F2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C7F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C802
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C804
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C806
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C808
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C80A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C80C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C80E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C810
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C812
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C814
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C816
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C818
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C81A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C820
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C830
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C83A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C846
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C84E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C85A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C862
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C872
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C87E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C894
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C89C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8DE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C8FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C906
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C90C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C90E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C910
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C912
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C914
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C916
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C91A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C91C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C91E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C920
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C922
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C928
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C92A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C930
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C932
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C938
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C950
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C952
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C954
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C95A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C95C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C960
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C962
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C966
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C968
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C96A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C978
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C97A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C97C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C980
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C98C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C990
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C992
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C994
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C998
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C99A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C99C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C99E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9A0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9A4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9B2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9B8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9C8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9E2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9E6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811C9EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CAF0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CAF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CAF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CAFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CAFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB06
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB08
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB10
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB14
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB16
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB22
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB24
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB32
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB34
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CB36
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBC8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBCA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBCC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBCE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBD0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBD2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBD4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBD8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBE0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBE2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBE4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBE6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CBFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC02
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC06
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC08
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC10
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC12
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC14
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC16
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC28
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC36
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC40
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC58
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC6C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC76
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CC8A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CCF8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CCFA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CCFC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CCFE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD00
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD02
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD04
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD06
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD08
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD0A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD0E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD10
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD12
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD14
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD16
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD1A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD1C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD1E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD20
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD22
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD24
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD26
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD28
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD2A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD2C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD2E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD30
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD38
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD3A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD3E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD40
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD42
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD44
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD46
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD48
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD4A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD50
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD52
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD54
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD56
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD58
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD5A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD5C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD5E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD60
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811CD62
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB50
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB6A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB84
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB8E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB90
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DB9C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DBAA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DBB0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DBD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DBEA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DBF6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DC60
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811DC64
+mode = "arm"
+[[extra_func]]
+addr = 0x0811E098
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0C2
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0CA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0CE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0D0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E0FE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E120
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E13C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E148
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E160
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E168
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E184
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E196
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E1D4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E1DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E1E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E1EE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E1FC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E216
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E21E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E226
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E22C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E232
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E240
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E246
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E254
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E25A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E268
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E26E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E2CC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E2D6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E2E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E300
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E30C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E314
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E31C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E324
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E32E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E33A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E356
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E35C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E366
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E36C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E37A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E392
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E39E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3BC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3E0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E3EA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E446
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E44A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E456
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E468
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E46E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E476
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E47A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E492
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E498
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E4A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E4BA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E4C6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E4DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E4F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E502
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E504
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E50E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E514
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E51E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E528
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E594
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E5AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E5C0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E5C4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E608
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E62C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E644
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E65C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E660
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E670
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6BE
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6D8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6DC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6F4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6F6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E6F8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E704
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E70A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E718
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E72A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E732
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E758
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E764
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E792
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E79C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E7AA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E860
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E874
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E8AC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E8B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E8E8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E902
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E944
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E946
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E990
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811E9B0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA08
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA30
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA3C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA4C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA4E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EA58
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EB28
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EB32
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EB88
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EBA4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EBC0
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811EBD6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811ED0C
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811ED16
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F170
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F1B6
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F1E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F1EC
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F210
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F21A
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F222
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F230
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F240
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F574
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F598
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F59E
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F5A8
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F9DA
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811F9E4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FA18
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FA48
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FA62
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FAF4
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FB24
+mode = "thumb"
+[[extra_func]]
+addr = 0x0811FB3E
+mode = "thumb"

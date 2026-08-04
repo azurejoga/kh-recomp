@@ -1,0 +1,64 @@
+# ROM e BIOS — NAO versionar (fornecidos pelo usuario nos caminhos esperados)
+/roms/*.gba
+/roms/*.bin
+/gbarecomp/bios/*.bin
+/roms/
+/roms/*.sav
+!roms/
+!roms/*.sav
+
+# Artefatos de build — nunca versionar
+/build/
+build*/
+*.o
+*.obj
+
+# Caches e dirs de experimento — nao reproduzem do clone
+cold_100_proof/
+cold_100_v2/
+recompilacao_nativa/
+pokemon-access-ref/
+prism_src/
+prism_rel/
+prism_linux_extract/
+recomp_cache/
+generated_backup_*/
+dist/
+
+# Binarios de ferramenta externa (o build usa o gba_recompile do source)
+tools/recomp.exe
+tools/gba-pack.exe
+*.obj.bin
+*.binary
+
+# prism.dll prebuilt EH versionado (runtime carrega ao lado do exe)
+#prism/bin/
+
+# Diagnostico / midia / scripts descartaveis
+*.wav
+*.mp3
+*.csv
+*.log
+*.frag
+a11y_dump.txt
+translation.dll
+newram.c
+newram.o
+khcom_eur-bios.0.c
+khcom_eur-bios.0.o
+replay_z.txt
+compact_vhdx.txt
+check_dirs.ps1
+check_space.ps1
+check_vhdx.ps1
+clean_temp2.ps1
+find_big.ps1
+free_space.ps1
+send_z2.ps1
+appdata_scan.ps1
+_stacksize_test.patch
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

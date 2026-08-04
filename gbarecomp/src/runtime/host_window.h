@@ -1,0 +1,159 @@
+// host_window.h — minimal host window + input surface.
+//
+// Soft-dependency on SDL2. When the build can find SDL2 the cpp
+// uses it; otherwise the same symbols compile as no-op stubs so
+// headless builds (CI, BIOS smoke without --window) still link.
+//
+// The window owns a logical-size streaming texture matching the active GBA
+// framebuffer pixel format (RGB888). Expanded views opt into a resizable,
+// aspect-correct viewport; the faithful 240x160 path retains the historical
+// fixed SDL presentation. pump() drains the OS event queue, returns a quit flag
+// and a packed GBA KEYINPUT value (active-low, 1 = released).
+
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+
+struct RecompRuntimeUi;
+
+namespace gbarecomp {
+
+class HostWindow {
+public:
+    HostWindow();
+    ~HostWindow();
+
+    HostWindow(const HostWindow&) = delete;
+    HostWindow& operator=(const HostWindow&) = delete;
+
+    // True if this build was compiled against a real windowing
+    // backend. When false, open() always fails.
+    static bool is_available();
+
+    // Open a window. `scale` is the integer scale factor applied to
+    // the logical surface, whose size is `base_w` x `base_h` (240x160 for the
+    // faithful view, wider when view-area expansion is active). Returns false on
+    // failure (also when is_available() is false).
+    // `screen` is the per-game color model from [video].screen in game.toml
+    // (raw|unlit|frontlit|backlit|classic), or nullptr for none. The
+    // GBARECOMP_SCREEN env var, when set, overrides it.
+    // `linear_filter` selects ordinary linear scaling. `sharp_filter` uses a
+    // GPU integer prescale followed by a small fractional linear pass and
+    // takes precedence when both are requested.
+    bool open(int scale = 3, int base_w = 240, int base_h = 160,
+              const char* title = "gbarecomp", const char* screen = nullptr,
+              bool linear_filter = false, bool sharp_filter = false,
+              bool resize_driven_view = false);
+    void close();
+    bool is_open() const { return open_; }
+
+    // Resize the logical streaming surface without changing the host window.
+    // Used only by the explicit resize-driven view policy; fixed-width callers
+    // never invoke it. drawable_size() reports the live client-window extent
+    // (and therefore follows drag-resize and borderless desktop fullscreen).
+    bool set_surface_size(int base_w, int base_h);
+    bool drawable_size(int* width, int* height) const;
+
+    // Load player keybinds + system hotkeys from `dir` (the exe directory):
+    //   * keybinds.ini — recomp-ui's generic keybinds format ([player1],
+    //     SDL scancode names). Absent file => the built-in defaults below,
+    //     which MATCH recomp-ui's defaults so the launcher rebind page and
+    //     the game always agree: A=X B=Z L=C R=V Start=Return Select=RShift
+    //     + arrow keys.
+    //   * config.ini [KeyMap] — hotkey bindings (SDL keycode names with
+    //     Ctrl+/Alt+/Shift+ prefixes): Fullscreen, Pause, Turbo,
+    //     WindowBigger, WindowSmaller, VolumeUp, VolumeDown, DisplayPerf.
+    // Never called => built-in defaults for both. Safe to call when the
+    // files don't exist.
+    void load_input_config(const char* dir);
+
+    // Live window/audio controls (hotkey + launcher-driven). All no-ops when
+    // the window isn't open or this build has no SDL2.
+    // Tri-state fullscreen mode: 0 windowed, 1 borderless
+    // (SDL_WINDOW_FULLSCREEN_DESKTOP), 2 exclusive (SDL_WINDOW_FULLSCREEN).
+    // Out-of-range values clamp to 0..2. fullscreen() reports the current mode.
+    void set_fullscreen(int mode);
+    int  fullscreen() const;
+    void adjust_scale(int delta);       // integer window scale, clamped 1..8
+    void set_volume(int pct);           // 0..100, applied to pushed samples
+    int  volume() const;
+    int  window_scale() const;
+    void set_linear_filter(bool enabled);
+    bool linear_filter() const;
+    void set_audio_enabled(bool enabled);
+    bool audio_enabled() const;
+    void set_resize_driven_view(bool enabled);
+#if defined(GBARECOMP_RUNTIME_UI)
+    // Attach the capability-only shared model. HostWindow presents it through
+    // Dear ImGui's SDL_Renderer2 backend over the existing game renderer.
+    void set_runtime_ui(RecompRuntimeUi* ui);
+#endif
+    void set_fps_readout(bool on);      // presents-per-second in the title bar
+    bool fps_readout() const;
+
+    // Upload one base_w x base_h RGB888 frame (the dimensions passed to open())
+    // and present.
+    void present(const uint8_t* rgb888);
+
+    // Push `count` int16_t mono samples (32.768 kHz) into the audio
+    // output queue. Backend converts to the host device's format.
+    // No-op if audio init failed or this build has no SDL2.
+    void push_audio_samples(const int16_t* samples, std::size_t count);
+
+    // Service the native window-system queue without consuming input events.
+    // Long guest frames use this to remain responsive between presentations.
+    void service_events();
+
+    struct Events {
+        bool     quit = false;
+        // GBA KEYINPUT layout. Active-low: 1 = released, 0 = pressed.
+        // Bits: 0=A 1=B 2=Sel 3=Sta 4=Right 5=Left 6=Up 7=Down 8=R 9=L.
+        uint16_t keyinput = 0x03FF;
+        // Edge-triggered save-state slot hotkeys. F1..F9 load slot
+        // 1..9; Shift+F1..F9 save slot 1..9. 0 = no request this pump.
+        // The caller acts on these at the top of the loop (a clean
+        // dispatch boundary), never mid-frame.
+        int      save_slot = 0;
+        int      load_slot = 0;
+        // Optional, edge-triggered solar controls from config.ini [KeyMap].
+        // They have no built-in bindings; recomp-ui exposes them only for
+        // cartridges that declare a solar sensor.
+        bool     solar_brighter = false;
+        bool     solar_dimmer = false;
+        bool     solar_live = false;
+        // Level-triggered: true while the fast-forward (Turbo) binding is
+        // held (default Tab). Uncaps the frame limiter for as long as it's
+        // down.
+        bool     fast_forward = false;
+        // Edge-triggered system hotkeys (config.ini [KeyMap] bindings; see
+        // load_input_config). The caller owns the semantics: fullscreen and
+        // window scale route back into this window, pause gates stepping in
+        // the run loop, volume adjusts pushed-sample gain, FPS toggles the
+        // title-bar readout.
+        bool     toggle_fullscreen = false;
+        bool     toggle_pause = false;
+        bool     window_bigger = false;
+        bool     window_smaller = false;
+        bool     volume_up = false;
+        bool     volume_down = false;
+        bool     toggle_fps = false;
+        // Screen-reader mode toggle (Shift+A default). The caller toggles
+        // Prism speech on/off when this is set.
+        bool     toggle_accessibility = false;
+        // Horizontal mouse velocity while the left button is held. The runtime
+        // maps this host-neutral delta onto cartridge gyroscope sample units.
+        int      gyro_delta_x = 0;
+        bool     mouse_gyro_active = false;
+        // Controller angular velocity around its face-normal axis, in rad/s.
+        // A DualSense supplies this through SDL's standard gyro sensor API.
+        float    gyro_rate_z = 0.0f;
+    };
+    Events pump();
+
+private:
+    bool open_ = false;
+    void* impl_ = nullptr;  // backend-specific opaque
+};
+
+}  // namespace gbarecomp

@@ -1,0 +1,52 @@
+# game.build.toml — auto-contido, para rodar KHRecomp.exe a partir do dir
+# de build (o clone publicado). Os paths são relativos ao próprio dir onde
+# o exe é executado, então basta colocar a ROM e o BIOS ao lado.
+#
+# A ROM (.gba) e o BIOS (.bin) NÃO são versionados (direitos autorais);
+# o usuário os fornece ao lado do executável, mantendo os nomes abaixo.
+#
+# Este arquivo é copiado automaticamente para o dir de build pelo CMake
+# (POST_BUILD), junto com a prism.dll e o savestate/save.
+
+[game]
+name           = "Kingdom Hearts: Chain of Memories"
+short_name     = "kingdom_hearts_com"
+default_region = "eur"
+
+# ── BIOS identity (ao lado do exe) ──────────────────────────────
+[bios]
+path = "gba_bios.bin"                                   # sobreponha com --bios
+sha1 = "300c20df6731a33952ded8c436f7f186d25d3492"
+
+# ── ROM identity (ao lado do exe) ──────────────────────────────
+[rom]
+path = "khcom_eur.gba"          # sobreponha com --rom
+
+# ── Recompiler (metadata p/ edit; corpus já gerado em generated/) ─
+[recompiler]
+entry_point = "0x08000000"
+seeds       = "symbols/imported_symbols.tsv"
+boundaries  = "symbols/function_boundaries.tsv"
+out_dir     = "generated"
+strict      = true
+
+# ── Save chip ───────────────────────────────────────────────────
+[save]
+type = "flash1m"
+
+# ── Runtime ────────────────────────────────────────────────────
+[runtime]
+window_title = "KHRecomp"
+
+# ── Video ──────────────────────────────────────────────────────
+[video]
+screen = "frontlit"
+
+# ── Audio ──────────────────────────────────────────────────────
+[audio]
+shadow = false
+
+# ── Function table ─────────────────────────────────────────────
+[functions]
+arm   = []
+thumb = []

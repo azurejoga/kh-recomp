@@ -1,0 +1,15 @@
+# eur.toml — region-specific overrides for the Europe release.
+#
+# Layered on top of game.toml.
+
+[rom]
+sha1  = "8db73586cdb11b3795907edebf43228dbcd3e6b2"
+crc32 = "0x772D97FB"  # IEEE 802.3, headerless. Informational —
+                      # the runtime's gate is SHA-1, not CRC32.
+
+[save]
+type = "flash1m"     # Flash 1Mbit (128 KB) on the EU cart
+size = "0x20000"
+
+# Per-region IRQ / DMA / timer quirks (if any) go here.
+[quirks]

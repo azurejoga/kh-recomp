@@ -1,0 +1,51 @@
+# game.toml — Kingdom Hearts: Chain of Memories (Europe) (GBA)
+#
+# The runner reads this to decide which ROM to load, which region
+# config to layer in, where the entry point is, and what save chip
+# is expected.
+
+[game]
+name           = "Kingdom Hearts: Chain of Memories"
+short_name     = "kingdom_hearts_com"
+default_region = "eur"
+
+# ── BIOS identity ────────────────────────────────────────────────────
+[bios]
+path = "../gbarecomp/bios/gba_bios.bin"   # default; override via --bios
+sha1 = "300c20df6731a33952ded8c436f7f186d25d3492"
+
+# ── ROM identity ─────────────────────────────────────────────────────
+[rom]
+path = "roms/khcom_eur.gba"   # user-provided; not in this repo
+
+# ── Recompiler entry & layout ───────────────────────────────────────
+[recompiler]
+entry_point   = "0x08000000"
+seeds         = "symbols/imported_symbols.tsv"
+boundaries    = "symbols/function_boundaries.tsv"
+out_dir       = "generated"
+strict        = true
+
+# ── Save chip ────────────────────────────────────────────────────────
+# Kingdom Hearts: Chain of Memories uses a Flash 1M (128 KB) chip with
+# a custom (non-SDK) driver; the runtime models the MX29L010 command set.
+[save]
+type = "flash1m"
+
+# ── Runtime ─────────────────────────────────────────────────────────
+[runtime]
+debug_port    = 19843
+window_title  = "KHRecomp"
+
+# ── Video ───────────────────────────────────────────────────────────
+[video]
+screen = "frontlit"
+
+# ── Audio ───────────────────────────────────────────────────────────
+[audio]
+shadow = false
+
+# ── Function table (dispatch hints) ─────────────────────────────────
+[functions]
+arm   = []
+thumb = []
