@@ -123,7 +123,6 @@ state achievable by any GBA recompiler.
 | `config/eur.toml` | Europe region overrides (sha1/crc32, flash1m save) |
 | `generated/` | AOT corpus (versioned; derived artifact of your ROM) |
 | `src/runtime/` | Runtime: dispatch, window, audio, save-states, self-heal, Prism |
-| `docs/` | Documentation set |
 | `gbarecomp/` | Game-agnostic core (mstan fork) + its own docs |
 | `prism/` | Accessibility bridge (prebuilt Prism artifacts, optional) |
 
@@ -163,6 +162,26 @@ If you remove `generated/`, the build regenerates it with
    own dump, at `roms/khcom_eur.gba`.
 3. **GBA BIOS** — 16 KiB dump, your own, at `gbarecomp/bios/gba_bios.bin`.
 4. **`prism.dll`** — already versioned and copied automatically. Nothing to do.
+
+> **⚠ BIOS recompile — required before building (the #1 build gotcha).**
+> The **recompiled BIOS is not versioned** (copyright: it embeds Nintendo's
+> BIOS bytes as instruction-by-instruction lowerings). The build detects its
+> absence and compiles anyway — with a **placeholder stub** — printing
+> `BIOS recompiled output absent — placeholder dispatch only`. The resulting
+> exe boots via HLE/interpreted BIOS: the intro is slow and stutters.
+> **To get the real LLE BIOS (native intro, no stutter), generate it once
+> before the build**, from the repo root:
+>
+> ```bash
+> cmake --build build --target gba_recompile -j$(nproc)
+> ./build/gbarecomp_build/gba_recompile.exe --bios gbarecomp/bios/gba_bios.bin
+> ```
+>
+> This writes
+> `gbarecomp/src/runtime/generated_bios/bios_recompiled.cpp` (+ `.h` and
+> `bios_dispatch_table.cpp`). Re-run `cmake` after generating. If the file is
+> present, the build log shows `bios_backend=LLE (recompiled BIOS)` at runtime
+> instead of the placeholder warning.
 
 The final `.exe` is **static**: it embeds SDL2, libstdc++, libgcc and
 libwinpthread — zero third-party DLLs in the deliverable (only Windows system

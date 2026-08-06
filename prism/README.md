@@ -20,7 +20,7 @@ works normally, just without the voice bridge.**
 
 - Project: [Prism](https://github.com/ethindp/prism) — MPL-2.0.
 - Logically, this folder is a **third-party dependency** redistributed here
-  for build convenience. See `docs/NOTICE.md` and
+  for build convenience. See `README.md` (Notice) and
   `gbarecomp/THIRD_PARTY_ATTRIBUTION.md`. The full Prism source lives in the
   upstream repository.
 
@@ -28,4 +28,4 @@ works normally, just without the voice bridge.**
 
 The bridge is at Phase 1 (shipped and validated): the **Shift + A** hotkey
 turns on confirmation speech via NVDA. Phase 2 (reading the game's text from
-VRAM) is **not yet implemented** — see `docs/ACCESSIBILITY.md`.
+VRAM) is **not yet implemented** — see `README.md` (Accessibility).
